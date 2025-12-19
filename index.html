@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAREAS</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-dark text-white text-center">
+
+    <div class="mb-3">
+            <label for="txt_numero_inicio" class="form-label">Ingrese Tarea:</label>
+            <input
+                type="text"
+                class="form-control"
+                name=""
+                id="txt_tarea"
+                aria-describedby="helpId"
+                placeholder="Estudiar JS"
+            />
+            <small id="helpId" class="form-text text-muted">Ejemplo:10</small>
+    </div>
+
+    <div class="mb-3">
+            <label for="txt_numero_inicio" class="form-label">Ingrese Estado:</label>
+            <input
+                type="text"
+                class="form-control"
+                name=""
+                id="txt_estado"
+                aria-describedby="helpId"
+                placeholder="Completado"
+            />
+            <small id="helpId" class="form-text text-muted">Ejemplo:Completado</small>
+    </div>
+
+    <div class="d-grid gap-2">
+            <button
+                type="button"
+                name=""
+                id="btn_agregar"
+                class="btn btn-primary"
+            >
+                AÑADIR TAREA
+            </button>
+    </div>
+
+
+    <div class="row">
+            <div class="col">TAREAS:
+                <div id="txt_mostrar_tareas"></div>
+            </div>
+            <div class="col">ESTADO:
+                <div id="txt_mostrar_estado"></div>
+            </div>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class="col">TAREAS COMPLETADAS:
+            <div id="txt_mostrar_completadas"></div>
+        </div>
+        <div class="col">ESTADO:
+            <div id="txt_mostrar_pendientes"></div>
+        </div>
+    </div>
+
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./public/js/tareas.js"></script>
+    
+</body>
+</html>
